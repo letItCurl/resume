@@ -1,0 +1,151 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{lmodern} % modern font with small caps + bold support
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Roland Lopez} \\ \vspace{1pt}
+    \small Bangkok, Thailand $|$ \href{mailto:rolandlopez.developer@gmail.com}{rolandlopez.developer@gmail.com} $|$
+    \href{https://rolandsoftwares.com}{rolandsoftwares.com} $|$
+    \href{https://github.com/letItCurl}{github.com/letItCurl} $|$
+    \href{https://calendly.com/rolandlopez/roland-ruby}{Book a Meeting}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+Full‑Stack \& DevOps Engineer (7+ yrs) with deep Rails expertise. Builder of scalable systems, developer tooling, and internal AI agents. Conference organizer and community advocate.\
+
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages}{: Ruby, JS, TS, Python} \\
+    \textbf{Frameworks}{: Rails, React, Vue, Angular, Hotwire, Svelte} \\
+    \textbf{Infra}{: Docker, Kubernetes, AWS, Kamal, Terraform, GitLab CI} \\
+    \textbf{Databases}{: PostgreSQL, MySQL, Redis, ElasticSearch} \\
+    \textbf{Other}{: Dev onboarding, internal tooling, workshops, stakeholder mgmt}
+  }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {RubyConfTH}{Bangkok, Thailand}
+    {Conference Creator}{May 2023 -- Present}
+    \resumeItemListStart
+      \resumeItem{Community Initiative}{Driven by passion for Ruby, involving financial investment but no personal profit}
+      \resumeItem{Sponsorships}{Secured \$20,000 in sponsorships by closing deals with four major companies}
+      \resumeItem{Operations}{Coordinated logistics and teams for a 250-person conference in Bangkok}
+      \resumeItem{Outreach}{Led marketing, ticket sales, and speaker recruitment (CFP, outreach, curation)}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Agoda}{Bangkok, Thailand}
+    {Developer Advocate}{May 2023 -- Present}
+    \resumeItemListStart
+      \resumeItem{AI Agents}{Led internal adoption of scalable AI Agent solutions and CI/CD best practices}
+      \resumeItem{Community}{Promoted knowledge sharing across departments through talks and workshops}
+      \resumeItem{Enablement}{Built tooling and documentation to improve developer velocity}
+    \resumeItemListEnd
+
+    \resumeSubSubheading{Senior Full‑Stack Engineer}{-}
+    \resumeItemListStart
+      \resumeItem{Performance}{Improved CI velocity by 25\% for cross-functional teams}
+      \resumeItem{Scalability}{Developed production-grade backend and frontend features}
+    \resumeItemListEnd
+
+    \resumeSubSubheading{DevOps Engineer}{-}
+    \resumeItemListStart
+      \resumeItem{Stability}{Maintained and optimized CI/CD pipelines and Dockerized services}
+      \resumeItem{Security}{Implemented infrastructure best practices for scalable deployments}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {MailTracker}{Remote}
+    {Senior Full‑Stack Engineer}{Dec 2022 -- Feb 2023}
+    \resumeItemListStart
+      \resumeItem{Platform}{Developed a data-intensive analytics platform}
+      \resumeItem{Launch Readiness}{Enabled the sales team to launch Chrome extension MVP and start client onboarding}
+      \resumeItem{Payments}{Integrated Stripe for seamless payment and subscription management}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {SchoolMaker}{Remote}
+    {Senior Full‑Stack Engineer}{Nov 2020 -- Nov 2022}
+    \resumeItemListStart
+      \resumeItem{Growth}{Contributed to the platform's growth from 0 to 100,000 monthly active users within 6 months}
+      \resumeItem{Core Features}{Implemented critical features: payment integration, CSV exports, and video-on-demand processing}
+      \resumeItem{Performance}{Monitored and enhanced application performance, ensuring seamless deployment to production}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Solocal}{Remote}
+    {Full‑Stack Engineer}{May 2020 -- Nov 2020}
+    \resumeItemListStart
+      \resumeItem{MVP Launch}{Developed and deployed a scalable MVP for a B2B outreach product (400,000 MAUs)}
+      \resumeItem{Remote Coordination}{Collaborated with and coordinated remote teams across EU–APAC zones}
+      \resumeItem{Reliability}{Ensured reliability and performance in a fast-paced product launch cycle}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{References}
+Available upon request
+
+\end{document}
